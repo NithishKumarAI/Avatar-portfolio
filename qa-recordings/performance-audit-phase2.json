@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-26T13:28:04.862Z",
+  "viewportDesktop": "1440x900",
+  "viewportMobile": "393x851 (DPR 3)",
+  "recordings": {
+    "screencastFramesCount": 256,
+    "outputVideo": "qa-recordings/scrolling_experience.mp4"
+  },
+  "measurements": {
+    "domContentLoadedMs": 65,
+    "loadEventMs": 65,
+    "largestContentfulPaintMs": 140,
+    "cumulativeLayoutShift": 0.006,
+    "sampleWebPDecodeMs": 6.2,
+    "totalResourcesLoaded": 104,
+    "networkTransferMB": 0.12,
+    "jsHeapUsedMB": 4.1,
+    "jsHeapLimitMB": 4192
+  },
+  "verifiedChecks": {
+    "facialConsistencyFixed": "Scene 3 glasses removed, matching Scene 2 jacket & haircut",
+    "ghostingEliminated": "Replaced 1.5s dissolved avatar with directional camera whip-pan",
+    "blackBlockArtifactEliminated": "Replaced zoomin pixelation with linear screen lighting fade",
+    "progressiveStreamingImplemented": "Micro-batched progressive loading with anchor priority",
+    "reducedMotionSupported": true,
+    "resumeLinkWorking": true,
+    "mobileViewportSupported": true,
+    "bidirectionalScrubbingVerified": true
+  }
+}
