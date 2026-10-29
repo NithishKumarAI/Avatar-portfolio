@@ -6,7 +6,7 @@ import path from "node:path";
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const PORT = 9222;
 const RECORDING_DIR = path.resolve("qa-recordings");
-const TARGET_URL = "http://localhost:5173/";
+const TARGET_URL = "http://localhost:3001/";
 
 if (!fs.existsSync(RECORDING_DIR)) {
   fs.mkdirSync(RECORDING_DIR, { recursive: true });

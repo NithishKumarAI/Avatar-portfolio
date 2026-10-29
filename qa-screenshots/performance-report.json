@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-10-26T12:34:03.774Z",
+  "timestamp": "2026-10-27T13:18:36.198Z",
   "viewport": "1440x900 (Desktop)",
   "performance": {
-    "domContentLoadedMs": 99,
-    "loadEventMs": 99,
-    "totalResourcesCount": 107,
-    "networkTransferMB": 0.12,
-    "jsHeapUsedMB": 3.7,
-    "reverseScrubAverageFPS": 16
+    "domContentLoadedMs": 281,
+    "loadEventMs": 282,
+    "totalResourcesCount": 33,
+    "networkTransferMB": 0.11,
+    "jsHeapUsedMB": 45.4,
+    "reverseScrubAverageFPS": 14
   },
   "scenesVerified": {
     "scene1WaveAndHi": true,

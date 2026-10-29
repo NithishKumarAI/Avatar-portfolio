@@ -1,4 +1,4 @@
-import { spawn } from "node:child_process";
+import { spawn, execSync } from "node:child_process";
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -6,7 +6,7 @@ import path from "node:path";
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const PORT = 9222;
 const SCREENSHOT_DIR = path.resolve("qa-screenshots");
-const TARGET_URL = "http://localhost:5173/";
+const TARGET_URL = "http://localhost:3001/";
 
 if (!fs.existsSync(SCREENSHOT_DIR)) {
   fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
@@ -159,25 +159,43 @@ async function main() {
     console.log("Capturing Scene 1: Avatar Waving & Saying Hi...");
     await client.eval("window.scrollTo(0, 0)");
     await sleep(1000);
-    await client.screenshot("01_scene_wave_welcome.png");
+    await client.screenshot("01_scene1_hero_welcome.png");
 
-    // Scroll to Scene 2 (Avatar turns and sits at desk)
-    console.log("Scrubbing down to Scene 2: Avatar turns & sits at desk...");
+    // Scroll to Scene 2: About Me & What I Build (p = 0.32)
+    console.log("Scrubbing to Scene 2: Walking & About Me...");
     await client.eval(`(() => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      window.scrollTo({ top: maxScroll * 0.48, behavior: 'auto' });
+      window.scrollTo({ top: maxScroll * 0.32, behavior: 'auto' });
     })()`);
     await sleep(1000);
-    await client.screenshot("02_scene_workstation_sit.png");
+    await client.screenshot("02_scene2_walking_about.png");
 
-    // Scroll to Scene 3 (Monitor activates & reveals Robin)
-    console.log("Scrubbing down to Scene 3: Monitor activates & reveals Robin...");
+    // Scroll to Scene 3: Workstation Docking & Sitting (p = 0.55)
+    console.log("Scrubbing to Scene 3: Workstation Docking & Sitting...");
     await client.eval(`(() => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      window.scrollTo({ top: maxScroll * 0.98, behavior: 'auto' });
+      window.scrollTo({ top: maxScroll * 0.55, behavior: 'auto' });
     })()`);
     await sleep(1000);
-    await client.screenshot("03_scene_robin_reveal.png");
+    await client.screenshot("03_scene3_workstation_sit.png");
+
+    // Scroll to Scene 4: Flagship Projects - Robin PA (p = 0.74)
+    console.log("Scrubbing to Scene 4: Flagship Project Showcase...");
+    await client.eval(`(() => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      window.scrollTo({ top: maxScroll * 0.74, behavior: 'auto' });
+    })()`);
+    await sleep(1000);
+    await client.screenshot("04_scene4_robin_projects.png");
+
+    // Scroll to Scene 5: Toolkit, Journey & Contact (p = 0.95)
+    console.log("Scrubbing to Scene 5: Toolkit, Journey & Contact...");
+    await client.eval(`(() => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      window.scrollTo({ top: maxScroll * 0.95, behavior: 'auto' });
+    })()`);
+    await sleep(1000);
+    await client.screenshot("05_scene5_toolkit_journey.png");
 
     // Bidirectional test: Scrub BACK UP to Scene 1
     console.log("Bidirectional Test: Scrubbing BACK UP to Scene 1...");
@@ -193,7 +211,38 @@ async function main() {
       if (tDelta > 0) fpsSamples.push(1000 / tDelta);
     }
     await sleep(500);
-    await client.screenshot("04_reverse_scrub_return.png");
+    await client.screenshot("06_reverse_scrub_return.png");
+
+    // Generate full-trajectory video recording
+    console.log("Generating full-trajectory video recording...");
+    const videoFramesDir = path.resolve("qa-recordings/video_frames");
+    if (!fs.existsSync(videoFramesDir)) fs.mkdirSync(videoFramesDir, { recursive: true });
+    for (const f of fs.readdirSync(videoFramesDir)) fs.unlinkSync(path.join(videoFramesDir, f));
+
+    let vFrameIdx = 0;
+    // Forward pass: 0.0 -> 1.0 (26 frames)
+    for (let p = 0; p <= 1.0; p += 0.04) {
+      await client.eval(`window.scrollTo(0, (document.documentElement.scrollHeight - window.innerHeight) * ${p})`);
+      await sleep(60);
+      const res = await client.send("Page.captureScreenshot", { format: "jpeg", quality: 85 });
+      fs.writeFileSync(path.join(videoFramesDir, `frame_${String(vFrameIdx++).padStart(4, '0')}.jpg`), Buffer.from(res.data, 'base64'));
+    }
+    // Reverse pass: 1.0 -> 0.0 (26 frames)
+    for (let p = 1.0; p >= 0; p -= 0.04) {
+      await client.eval(`window.scrollTo(0, (document.documentElement.scrollHeight - window.innerHeight) * ${p})`);
+      await sleep(60);
+      const res = await client.send("Page.captureScreenshot", { format: "jpeg", quality: 85 });
+      fs.writeFileSync(path.join(videoFramesDir, `frame_${String(vFrameIdx++).padStart(4, '0')}.jpg`), Buffer.from(res.data, 'base64'));
+    }
+
+    const outputVideo = path.resolve("qa-recordings/nithish_ai_v3_scroll.mp4");
+    const ffmpegCmd = `ffmpeg -y -framerate 12 -i "${path.join(videoFramesDir, 'frame_%04d.jpg')}" -c:v libx264 -pix_fmt yuv420p -crf 20 "${outputVideo}"`;
+    execSync(ffmpegCmd, { stdio: 'inherit' });
+    console.log(`Video generated successfully: ${outputVideo}`);
+
+    const artifactVideo = path.resolve('C:\\Users\\nithi\\.gemini\\antigravity\\brain\\c46e464f-61d0-46fc-8148-e50d1193f177\\nithish_ai_v3_scroll.mp4');
+    fs.copyFileSync(outputVideo, artifactVideo);
+    console.log(`Copied artifact video to: ${artifactVideo}`);
 
     // Open Photo Comparison Modal
     console.log("Opening Photo Comparison Modal...");

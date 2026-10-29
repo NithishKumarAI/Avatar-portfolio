@@ -9,7 +9,13 @@ export default defineConfig({
     react()
   ],
   server: {
-    port: 5173,
+    port: 3001,
+    strictPort: true,
+    host: true
+  },
+  preview: {
+    port: 3001,
+    strictPort: true,
     host: true
   }
 })

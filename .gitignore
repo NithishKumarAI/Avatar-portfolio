@@ -13,6 +13,9 @@ dist-ssr
 *.local
 .chrome-qa-profile
 .chrome-qa-profile*
+.chrome-v3*
+qa-recordings/raw_screencast*
+qa-recordings/video_frames*
 
 # Editor directories and files
 .vscode/*
