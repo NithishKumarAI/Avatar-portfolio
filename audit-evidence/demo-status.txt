@@ -1,0 +1,1 @@
+Robin: public beta website visible; ETA: prediction form visible; Cognitive Memory Engine: historical login visible, current LearnTrack deployment not established; AI Diary: 500 Server Error visible. No login, installer execution, or message submission performed.

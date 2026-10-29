@@ -1,0 +1,50 @@
+[
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-10-29T11:28:45.066Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "timestamp": "2026-10-29T11:28:45.491Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-10-29T11:28:45.939Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "timestamp": "2026-10-29T11:28:45.988Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-10-29T11:29:44.427Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "timestamp": "2026-10-29T11:29:44.658Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "timestamp": "2026-10-29T11:29:44.993Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "level": "warn",
+    "message": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+    "timestamp": "2026-10-29T11:29:45.000Z",
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  }
+]

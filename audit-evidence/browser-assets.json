@@ -1,0 +1,413 @@
+[
+  {
+    "id": "af3f0832ed115279",
+    "kind": "script",
+    "name": "client",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      },
+      {
+        "kind": "attribute",
+        "nodeId": 251,
+        "property": "src"
+      }
+    ],
+    "url": "http://localhost:3001/@vite/client"
+  },
+  {
+    "id": "6594d4d1f269bf72",
+    "kind": "script",
+    "name": "main.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      },
+      {
+        "kind": "attribute",
+        "nodeId": 374,
+        "property": "src"
+      }
+    ],
+    "url": "http://localhost:3001/src/main.tsx"
+  },
+  {
+    "id": "b62a328246b3e325",
+    "kind": "script",
+    "name": "@react-refresh",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/@react-refresh"
+  },
+  {
+    "id": "016a8f956232996f",
+    "kind": "script",
+    "name": "react.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/react.js?v=f371a7b1"
+  },
+  {
+    "id": "5df1cac7ff1892d1",
+    "kind": "stylesheet",
+    "name": "index.css",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/index.css"
+  },
+  {
+    "id": "17f39caa39be0d22",
+    "kind": "script",
+    "name": "react-dom_client.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/react-dom_client.js?v=f371a7b1"
+  },
+  {
+    "id": "60335cef00b70fc0",
+    "kind": "script",
+    "name": "react_jsx-dev-runtime.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=f371a7b1"
+  },
+  {
+    "id": "13dbd180f547e058",
+    "kind": "script",
+    "name": "App.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/App.tsx"
+  },
+  {
+    "id": "de56ce75465cf893",
+    "kind": "script",
+    "name": "env.mjs",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/vite/dist/client/env.mjs"
+  },
+  {
+    "id": "b142a09aa39043c4",
+    "kind": "script",
+    "name": "react-ybw3SXNP.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/react-ybw3SXNP.js?v=f371a7b1"
+  },
+  {
+    "id": "95a3517f1b8dcc68",
+    "kind": "script",
+    "name": "ThreeCanvas.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/ThreeCanvas.tsx"
+  },
+  {
+    "id": "5b5ecbbdfd88c382",
+    "kind": "script",
+    "name": "Navigation.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Navigation.tsx"
+  },
+  {
+    "id": "a1bdb09fc4220688",
+    "kind": "script",
+    "name": "LiveTelemetry.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/LiveTelemetry.tsx"
+  },
+  {
+    "id": "162c588905c9ff55",
+    "kind": "script",
+    "name": "Scene1Hero.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Scene1Hero.tsx"
+  },
+  {
+    "id": "82b084e1e2321437",
+    "kind": "script",
+    "name": "Scene2About.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Scene2About.tsx"
+  },
+  {
+    "id": "6692aae3675d4536",
+    "kind": "script",
+    "name": "Scene3WorkstationEnter.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Scene3WorkstationEnter.tsx"
+  },
+  {
+    "id": "219a4a5e5d04965f",
+    "kind": "script",
+    "name": "Scene4Projects.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Scene4Projects.tsx"
+  },
+  {
+    "id": "3400c8e48a880097",
+    "kind": "script",
+    "name": "Scene5ToolkitJourneyContact.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/Scene5ToolkitJourneyContact.tsx"
+  },
+  {
+    "id": "e9d680de680a8003",
+    "kind": "script",
+    "name": "PhotoComparisonModal.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/PhotoComparisonModal.tsx"
+  },
+  {
+    "id": "32e6d422bd21f3d0",
+    "kind": "script",
+    "name": "ResearchModal.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/ResearchModal.tsx"
+  },
+  {
+    "id": "ddb5b8ef704634f1",
+    "kind": "script",
+    "name": "lucide-react.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/lucide-react.js?v=f371a7b1"
+  },
+  {
+    "id": "1064856dadd4464b",
+    "kind": "script",
+    "name": "PortfolioWorld.ts",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/three/PortfolioWorld.ts"
+  },
+  {
+    "id": "2d3dcf0e1688524c",
+    "kind": "script",
+    "name": "SocialIcons.tsx",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/components/SocialIcons.tsx"
+  },
+  {
+    "id": "42e1fb08f248ddaa",
+    "kind": "script",
+    "name": "three.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.js?v=f371a7b1"
+  },
+  {
+    "id": "6558ee406a47e9f6",
+    "kind": "script",
+    "name": "Environment.ts",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/three/Environment.ts"
+  },
+  {
+    "id": "18a63a587830777f",
+    "kind": "script",
+    "name": "Workstation.ts",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/three/Workstation.ts"
+  },
+  {
+    "id": "3098c2dacf954ae7",
+    "kind": "script",
+    "name": "CharacterModel.ts",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/three/CharacterModel.ts"
+  },
+  {
+    "id": "35afbd4e4d159148",
+    "kind": "script",
+    "name": "CameraDirector.ts",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/src/three/CameraDirector.ts"
+  },
+  {
+    "id": "c1fb2c889f91b8af",
+    "kind": "script",
+    "name": "three.module-DFtsUDDU.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/three.module-DFtsUDDU.js?v=f371a7b1"
+  },
+  {
+    "id": "f196877160e84d1b",
+    "kind": "script",
+    "name": "three_examples_jsm_loaders_GLTFLoader__js.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/three_examples_jsm_loaders_GLTFLoader__js.js?v=f371a7b1"
+  },
+  {
+    "id": "943053378e891c6a",
+    "kind": "script",
+    "name": "react-dom-BDmDR2ni.js",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "script"
+      }
+    ],
+    "url": "http://localhost:3001/node_modules/.vite/deps/react-dom-BDmDR2ni.js?v=f371a7b1"
+  },
+  {
+    "id": "5260f029231c8332",
+    "kind": "other",
+    "name": "Xbot.glb",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "fetch"
+      }
+    ],
+    "url": "http://localhost:3001/models/Xbot.glb"
+  },
+  {
+    "id": "cfe9e9b357e0ae0a",
+    "kind": "image",
+    "name": "favicon.svg",
+    "sources": [
+      {
+        "kind": "resource",
+        "property": "other"
+      },
+      {
+        "kind": "attribute",
+        "nodeId": 253,
+        "property": "href"
+      }
+    ],
+    "url": "http://localhost:3001/favicon.svg"
+  }
+]
